@@ -1,0 +1,33 @@
+Creating a new SSH key - 
+https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys
+
+If you do not have an existing private SSH key file and a matching public SSH key file that you can use, generate a new SSH key. If you want to use an existing SSH key, locate the public SSH key file.
+
+Open a terminal on your workstation and use the ssh-keygen command to generate a new key. Specify the -C flag to add a comment with your username.
+
+ssh-keygen -t rsa -f ~/.ssh/[KEY_FILENAME] -C [USERNAME]
+
+where:
+
+[KEY_FILENAME] is the name that you want to use for your SSH key files. For example, a filename of my-ssh-key generates a private key file named my-ssh-key and a public key file named my-ssh-key.pub.
+[USERNAME] is the user for whom you will apply this SSH key.
+This command generates a private SSH key file and a matching public SSH key with the following structure:
+
+ssh-rsa [KEY_VALUE] [USERNAME]
+where:
+
+[KEY_VALUE] is the key value that you generated.
+[USERNAME] is the user that this key applies to.
+Restrict access to your private key so that only you can read it and nobody can write to it.
+
+chmod 400 ~/.ssh/[KEY_FILENAME]
+where [KEY_FILENAME] is the name that you used for your SSH key files.
+
+Repeat this process for every user for who needs a new key. Then, locate the public SSH keys that you made as well as any existing public SSH keys that you want to add to a project or instance.
+
+ssh-keygen -t rsa -f ~/.ssh/ssh-gcp.pem -C thomas
+
+[twors@localhost .ssh]$ pwd
+/home/twors/.ssh
+[twors@localhost .ssh]$ ls
+known_hosts  ssh-gcp.pem  ssh-gcp.pem.pub  ssh.pem

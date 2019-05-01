@@ -1,0 +1,1 @@
+gcloud compute --project "wors-test" ssh --zone "us-central1-a" "wors01"

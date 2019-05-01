@@ -1,0 +1,9 @@
+https://www.boldgrid.com/support/advanced-tutorials/how-to-set-up-your-ssh-key-with-github/
+
+#generate key
+ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"
+
+#show key
+cat ~/ssh/id_rsa.pub
+
+#finally add that key to whatever you are conencting to

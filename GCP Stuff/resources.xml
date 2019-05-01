@@ -1,0 +1,28 @@
+
+
+<project>
+    <node name="Wors01"
+    hostname="10.128.0.2"
+    username="thomas"
+    role="Rundeck"
+    environment="production"
+    tags="Rundeck, GCP"
+    />
+
+    <node name="Wors02"
+    hostname="10.128.0.3"
+    username="thomas"
+    role="slave1"
+    environment="production"
+    tags="slave, GCP"
+    />
+
+    <node name="centos54"
+    hostname="10.128.0.5"
+    username="thomas"
+    role="slave2"
+    environment="production"
+    tags="slave, GCP"
+    />
+
+</project>

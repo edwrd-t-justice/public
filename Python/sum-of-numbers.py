@@ -15,3 +15,4 @@ else:
        sum += num
        num -= 1
    print("The sum is",sum)
+#ex 5 will result in 5+4+3+2+1=15

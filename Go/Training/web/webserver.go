@@ -7,7 +7,12 @@ import (
 
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Hello World, this is Edwrd calling from the void"))
+		names := r.URL.Query()["name"]
+		var name string
+		if len(names) == 1 {
+			name = names[0]
+		}
+		w.Write([]byte("this is Edwrd calling from the void," + name))
 	})
 
 	err := http.ListenAndServe(":3000", nil)

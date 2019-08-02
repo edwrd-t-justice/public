@@ -3,7 +3,8 @@ adduser t
 echo -e "Welcome123\nWelcome123" | passwd t
 usermod -aG wheel t
 
-
-
-
 unset HISTFILE && exit
+
+#sed help
+sed -i 's/Defaults   requiretty/Defaults   !requiretty/' /etc/sudoers
+echo '%wheel        ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers

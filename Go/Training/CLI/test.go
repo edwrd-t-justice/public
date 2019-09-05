@@ -9,7 +9,8 @@ import (
 )
 
 // open function pulls from file using os package. f is file handle, err is error value
-func main() {
+func main() 
+{
 	//	f, err := os.Open("messages.log")    // opens resource
 	f, err := os.Open("/var/log/firewalld") // opens system file
 	if err != nil {                         //what to do if there is an error when does not equal nil

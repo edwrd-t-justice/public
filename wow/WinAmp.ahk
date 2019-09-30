@@ -5,7 +5,7 @@
 ; Will need to launch again 
 
 
-Random, n, 10000, 100000
+Random, n, 1000, 10000
 
 if (n >= 1100)
 
@@ -61,19 +61,19 @@ Loop, 10000000000 ; Loops functionally forever
 
 Loop, 10000000000 ; Loops functionally forever
 {
-    Send, {Enter} 
+    SendPlay, {Enter} 
 	sleep, n
-	Send, /dance	
+	Sendplay, /dance	
 	sleep, n
-	Send, {Enter}
+	SendPlay, {Enter}
 	sleep, n 
-	Send, {Left down} 
+	Sendplay, {Left down} 
     sleep, n
-	Send, {Left up} 
+	Sendplay, {Left up} 
 	sleep, n
-	Send, {Right down}
+	Sendplay, {Right down}
     sleep, n
-	Send, {Right up} 
+	Sendplay, {Right up} 
 	sleep, n
 }
 

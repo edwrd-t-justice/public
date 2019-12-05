@@ -2,7 +2,6 @@ https://www.boldgrid.com/support/advanced-tutorials/how-to-set-up-your-ssh-key-w
 
 #generate key
 ssh-keygen -t rsa -b 4096 -C "your_email@domain.com"
-ssh-keygen -t rsa -b 4096 -C "thomas@wors.wtf"
 
 #show key
 cat ~/ssh/id_rsa.pub

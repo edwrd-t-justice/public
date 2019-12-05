@@ -27,7 +27,7 @@ Repeat this process for every user for who needs a new key. Then, locate the pub
 
 ssh-keygen -t rsa -f ~/.ssh/ssh-gcp.pem -C thomas
 
-[twors@localhost .ssh]$ pwd
-/home/twors/.ssh
-[twors@localhost .ssh]$ ls
+[tw@localhost .ssh]$ pwd
+/home/tw/.ssh
+[tw@localhost .ssh]$ ls
 known_hosts  ssh-gcp.pem  ssh-gcp.pem.pub  ssh.pem

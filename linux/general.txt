@@ -8,3 +8,8 @@ unset HISTFILE && exit
 #sed help
 sed -i 's/Defaults   requiretty/Defaults   !requiretty/' /etc/sudoers
 echo '%wheel        ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers
+
+## Add things to bash profile
+export PATH=/opt/tools:$PATH
+then
+source .bash_profile

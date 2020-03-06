@@ -13,3 +13,10 @@ docker save -o ~/repos/public/Docker/images/centos7.docker centos
 
 # unzip file 
 tar -xvf file.tar.xz
+
+# Load image
+sudo docker load -i image.docker
+
+# https://docs.docker.com/get-started/part2/
+# https://hub.docker.com/_/centos
+# https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html
